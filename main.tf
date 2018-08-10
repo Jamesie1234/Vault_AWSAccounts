@@ -34,17 +34,9 @@ output "account_arn" {
 }
 
 output "vault_ec2_ro_path" {
-  value = "aws-${var.aws_account_name}/creds/ec2_ro"
+  value = "${module.accounts.vault_ec2_ro_path}"
 }
 
 output "vault_ec2_admin_path" {
-  value = "aws-${var.aws_account_name}/creds/ec2_admin"
-}
-
-output "vault_ec2_admin_policy" {
-  value = "aws-${var.aws_account_name}-admin"
-}
-
-output "vault_ec2_ro_policy" {
-  value = "aws-${var.aws_account_name}-ro"
+  value = "${module.accounts.vault_ec2_admin_path}"
 }
