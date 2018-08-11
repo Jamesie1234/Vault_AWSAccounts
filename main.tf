@@ -9,7 +9,7 @@ variable "keybase_user" {}
 // Modules
 module "accounts" {
   source  = "app.terraform.io/SecurityInDepth-Darnold/accounts/aws"
-  version = "4.0.0"
+  version = "4.1.0"
 
   aws_account_email = "${var.aws_account_email}"
   aws_account_name  = "${var.aws_account_name}"
