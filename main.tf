@@ -8,7 +8,7 @@ variable "keybase_user" {}
 //--------------------------------------------------------------------
 // Modules
 module "accounts" {
-  source  = "github.com/HappyPathway/terraform-aws-accounts.git"
+  source  = "github.com/Jamesie1234/terraform-aws-accounts.git"
   version = "4.1.1"
 
   aws_account_email = "${var.aws_account_email}"
